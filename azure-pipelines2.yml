@@ -1,4 +1,6 @@
 trigger:
+- task: Bash@3
+  inputs:
 - develop
 - feature/*
 - master
