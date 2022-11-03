@@ -11,5 +11,5 @@ variables:
 
 steps:
 - script: dotnet build---configuration.$(buildConfiguration)
-  displaytime: 'dotnet build $(buildConfiguration)'
+  displayName: 'dotnet build $(buildConfiguration)'
  
