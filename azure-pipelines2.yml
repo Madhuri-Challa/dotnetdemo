@@ -1,0 +1,15 @@
+trigger:
+- develop
+- feature/*
+- master
+
+pool:
+  name: 'Demo'
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- script: dotnet build---configuration.$(buildConfiguration)
+  displaytime: 'dotnet build $(buildConfiguration)'
+ 
